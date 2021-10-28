@@ -1,0 +1,17 @@
+.title {
+    background-color: lightpink;
+}
+
+#movietable td{
+    text-align: center;
+    border: 1px solid gray;
+}
+
+#movietable th{
+    border: 1px solid gray;
+}
+
+#movietable {
+    width: 80%;
+    border-spacing: 0px;
+}

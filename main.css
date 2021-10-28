@@ -1,0 +1,38 @@
+.loading {
+    background-color:  #d1a8ff;
+    width: 80%;
+    height: 5rem;
+}
+
+#main {
+    width: 90%;
+    height: 3rem;
+    border: 1px solid #3fc481;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+
+.regcon {
+    background-color: lightcoral;
+}
+.gray {
+    background-color: gray;
+}
+
+#menu {
+    width: 80%;
+    border-spacing: 0px;
+    margin: 100px;
+}
+
+/* 스페이스 치면 하위속성을 지칭하고, >모양을 쓰면 바로 아래속성을 지칭*/
+#menu td {
+    text-align: center;
+    border: 1px solid gray;
+} 
+
+#menu th {
+    background-color: lightgreen;
+    border: 1px solid gray;
+}
