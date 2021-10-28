@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie 입력 페이지입니다.</title>
+</head>
+<body>
+    
+    <form id="movieForm" action="movie/save" method="post">
+        <fieldset>
+            <legend>영화 정보 입력 폼입니다.</legend>
+            <div>
+                <label for="movie_name">영화이름</label>
+                <input type="text" name="movie_name" id="movie_name" maxlength="10" placeholder="여기 입력해주세요.">
+            </div>
+            <div>
+                <label for="passwd">비밀번호</label>
+                <input type="password" name="passwd" id="passwd">
+            </div>
+            <div>
+                <!-- textarea는 maxlength가 없어서 자바스크립트로 처리해야합니당 -->
+                <label for="desc">설명</label>
+                <textarea name="desc" id="desc" cols="100" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="genre">장르</label>
+                <select name="genre" id="genre">
+                    <option value="">----전체----</option>
+                    <option value="1">코믹</option>
+                    <option value="2" selected>호러</option>
+                    <option value="3">멜로</option>
+                </select>
+            </div>
+            <div>
+                <!-- name을 반드시 동일하게 맞춰야 중복선택이 안되는 라디오가 됨. -->
+                <label for="seat">인원수</label>
+                <input type="radio" name="seat" id="seat1" value="1"> 1인석
+                <input type="radio" name="seat" id="seat3" value="2"> 2인석
+                <input type="radio" name="seat" id="seat2" value="3"> 3인석
+            </div>
+            <div>
+                <label for="food">반입식품</label>
+                <input type="checkbox" name="food" id="food1" value="1" checked> 콜라
+                <input type="checkbox" name="food" id="food2" value="2"> 환타
+                <input type="checkbox" name="food" id="food3" value="3"> 팝콘
+            </div>
+            <div>
+                <!-- action으로 가기 위해서는 버튼이나, input type submit으로 이용하고, input type button은 submit 속성이 없당 -->
+                <input type="submit" value="저장" id="save">
+            </div>
+        </fieldset>
+    </form>
+
+
+    <script>
+        var movieForm = document.querySelector('#movieForm')
+        // var saveButton = document.querySelector('#save')
+
+        // movieForm.addEventListener('submit', function(event){
+        //     event.preventDefault()
+        //     // ajax 처리 등을 한 후 페이지를 이동시킴.
+        // })
+        
+    </script>
+
+</body>
+</html>
